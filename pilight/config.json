@@ -1,0 +1,14 @@
+{
+  "name": "Pilight",
+  "version": "1",
+  "slug": "pilight",
+  "description": "Pilight ervice Addon",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "service",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "5000/tcp": 5011
+  }
+}

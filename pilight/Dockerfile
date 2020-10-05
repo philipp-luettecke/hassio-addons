@@ -5,10 +5,10 @@ FROM $BUILD_FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
-RUN apk update \
-    && apk add -y libunwind libpcap wget vim \
-    && echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
-    && wget -O - http://apt.pilight.org/pilight.key | apt-key add -
+RUN apk update
+RUN apk add -y libunwind libpcap wget vim
+RUN echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list
+RUN wget -O - http://apt.pilight.org/pilight.key | apt-key add -
 
 # Install Pilight from apt repositories
 RUN apk update && apk add -y pilight

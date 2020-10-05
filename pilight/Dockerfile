@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/debian-base:3.2.2
+ARG BUILD_FROM=alpine:latest
 FROM $BUILD_FROM
 
 # Set shell

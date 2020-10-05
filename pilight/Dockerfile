@@ -6,7 +6,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
 RUN \
-    ping google.de \
     && apt-get update \
     && apt-get install -y libunwind8 libpcap0.8 wget vim \
     && echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \

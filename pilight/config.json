@@ -6,9 +6,13 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
+  "host_network": "true",
+  "privileged": ["SYS_RAWIO"],
+  "gpio": "true",
+  "devices": ["/dev/mem:/dev/mem:rwm"]
   "options": {},
   "schema": {},
   "ports": {
-    "5000/tcp": 5011
+    "5000/tcp": 5010
   }
 }

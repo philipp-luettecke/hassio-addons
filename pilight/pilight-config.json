@@ -1,0 +1,23 @@
+{
+    "devices": {},
+    "rules": {},
+    "gui": {},
+    "settings": {
+        "log-level": 6,
+        "pid-file": "/var/run/pilight.pid",
+        "log-file": "/var/log/pilight.log",
+        "webserver-enable": 1,
+        "webserver-root": "/usr/local/share/pilight/webgui",
+        "webserver-http-port": 5000,
+        "webserver-https-port": 5002,
+        "webserver-cache": 1,
+        "gpio-platform": "raspberrypi3"
+    },
+    "hardware": {
+        "433gpio": {
+            "sender": 0,
+            "receiver": 1
+        }
+    },
+    "registry": {}
+}

@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base system
 RUN apk update \
     && apk add libunwind libpcap wget vim dpkg \
-    && wget http://apt.pilight.org/pool/stable/main/p/pilight/pilight_8.1.5_armhf.deb
+    && wget http://apt.pilight.org/pool/stable/main/p/pilight/pilight_8.1.5_armhf.deb \
     && dpkg -i *.deb 
 #RUN echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list
 #RUN wget -O - http://apt.pilight.org/pilight.key | apt-key add -

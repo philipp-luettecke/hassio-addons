@@ -2,7 +2,7 @@
 #FROM $BUILD_FROM
 FROM arm32v7/debian:bullseye-slim
 
-COPY qemu-arm-static /usr/bin
+#COPY qemu-arm-static /usr/bin
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]

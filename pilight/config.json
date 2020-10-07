@@ -1,6 +1,6 @@
 {
   "name": "Pilight",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -8,12 +8,15 @@
   "boot": "auto",
   "host_network": "true",
   "privileged": ["SYS_RAWIO"],
+  "hassio_role": "manager",
   "gpio": "true",
   "devices": ["/dev/mem:/dev/mem:rwm"],
   "options": {
     "raspberry_revision": "raspberrypi3"
   },
-  "schema": {},
+  "schema": {
+    "raspberry_revision": "str"
+  },
   "ports": {
     "5000/tcp": 5010
   }

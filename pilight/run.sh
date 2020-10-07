@@ -4,5 +4,6 @@ echo Here we would like to adapt the pilight config with values from the configu
 
 echo Starting pilight daemon
 
-/usr/local/sbin/pilight-daemon -F
+#/usr/local/sbin/pilight-daemon -F
+service pilight restart
 

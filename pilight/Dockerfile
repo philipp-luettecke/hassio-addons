@@ -1,6 +1,6 @@
 #ARG BUILD_FROM=debian:buster-slim
 #FROM $BUILD_FROM
-FROM arm32v7/debian:bullseye-slim
+FROM homeassistant/armv7-base-debian:buster
 
 #COPY qemu-arm-static /usr/bin
 
@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y pilight
 COPY pilight-config.json /etc/pilight/config.json
 
 # Copy data for add-on
-COPY run.sh /
+COPY run.sh / 
 RUN chmod a+x /run.sh
 
-CMD [ "/run.sh" ]
+CMD [ "./run.sh" ]

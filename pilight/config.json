@@ -8,6 +8,8 @@
   "boot": "auto",
   "host_network": "true",
   "privileged": ["SYS_RAWIO"],
+  "hassio_role": "admin",
+  "full_access": "true",
   "gpio": "true",
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],

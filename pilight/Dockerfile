@@ -20,8 +20,7 @@ RUN cd /tmp \
    && dpkg -i libmbed*.deb
 
 # Install Pilight from apt repositories
-RUN apt-get update && apt-get install -y pilight \
-    && echo 11 > /sys/class/gpio/export
+RUN apt-get update && apt-get install -y pilight
 
 # Copy the pilight Config into the Container
 COPY pilight-config.json /etc/pilight/config.json

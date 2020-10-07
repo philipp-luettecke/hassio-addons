@@ -1,6 +1,5 @@
-#ARG BUILD_FROM=debian:buster-slim
-#FROM $BUILD_FROM
-FROM homeassistant/armv7-base-debian:buster
+ARG BUILD_FROM=homeassistant/armv7-base-debian:buster
+FROM $BUILD_FROM
 
 #COPY qemu-arm-static /usr/bin
 

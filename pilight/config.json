@@ -21,7 +21,7 @@
   "ports": {
     "5000/tcp": 5010,
     "5002/tcp": 5012
-  }
+  },
   "ports_description": {
     "5000/tcp": "HTTP Port of the Pilight Server",
     "5002/tcp": "HTTPS Port of the Pilight Server"

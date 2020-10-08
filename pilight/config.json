@@ -1,6 +1,6 @@
 {
   "name": "Pilight Server",
-  "version": "1.1.19
+  "version": "1.1.19",
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],

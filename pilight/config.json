@@ -4,7 +4,7 @@
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "startup": "services",
+  "startup": "initialize",
   "boot": "auto",
   "host_network": "true",
   "privileged": ["SYS_RAWIO"],

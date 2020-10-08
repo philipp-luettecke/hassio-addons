@@ -1,6 +1,6 @@
 {
   "name": "Pilight Server",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -9,17 +9,21 @@
   "host_network": "true",
   "privileged": ["SYS_RAWIO"],
   "hassio_role": "admin",
-  "full_access": "true",
   "gpio": "true",
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],
   "options": {
-    "gpio_layout": "raspberrypi3"
+    "gpio_platform": "raspberrypi3"
   },
   "schema": {
-    "gpio_layout": "str"
+    "gpio_platform": "str"
   },
   "ports": {
-    "5000/tcp": 5010
+    "5000/tcp": 5010,
+    "5002/tcp": 5012
+  }
+  "ports_description": {
+    "5000/tcp": "HTTP Port of the Pilight Server",
+    "5002/tcp": "HTTPS Port of the Pilight Server"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Pilight Server",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -8,7 +8,6 @@
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
   "hassio_role": "admin",
-  "host_network": "true",
   "gpio": "true",
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],

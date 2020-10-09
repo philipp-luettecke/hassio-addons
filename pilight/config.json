@@ -1,6 +1,6 @@
 {
   "name": "Pilight Server",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "slug": "pilight",
   "description": "Pilight Service Addon",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -20,10 +20,12 @@
   },
   "ports": {
     "5000/tcp": 5010,
+    "5001/tcp": 5011,
     "5002/tcp": 5012
   },
   "ports_description": {
     "5000/tcp": "HTTP Port of the Pilight Server",
-    "5002/tcp": "HTTPS Port of the Pilight Server"
+    "5001/tcp": "HTTP Port of the Pilight WebGui",
+    "5002/tcp": "HTTPS Port of the Pilight WebGui"
   }
 }

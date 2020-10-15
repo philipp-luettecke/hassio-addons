@@ -15,4 +15,5 @@
   "ports_description": {
     "8080/tcp": "HTTP Port of the Jenkins Server"
   }
+  "image": "philippluettecke/hassio-jenkins-{arch}"
 }

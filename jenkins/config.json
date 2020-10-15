@@ -1,0 +1,18 @@
+{
+  "name": "Jenkins Server",
+  "version": "0.1",
+  "slug": "jenkins",
+  "description": "Jenkins Service Addon",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "apparmor": "false",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "8080/tcp": 8090
+  },
+  "ports_description": {
+    "8080/tcp": "HTTP Port of the Jenkins Server"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "THM Grade Grabber",
+  "version": "0.1",
+  "slug": "thm_grade_grabber",
+  "description": "This Addon grabs the THM Grade Portal for updated grades and invokes a webhook accordingly",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "apparmor": "true",
+  "options": {
+    "username": "",
+    "password": "",
+    "webhook": "",
+    "scan_interval": "300"
+  },
+  "schema": {
+    "username": "str",
+    "password": "str",
+    "webhook": "str",
+    "scan_interval": "int"
+  },
+  "ports": {},
+  "ports_description": {},
+  "image":"philippluettecke/hassio-thm-grabber-{arch}"
+}

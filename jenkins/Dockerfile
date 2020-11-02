@@ -13,10 +13,16 @@ RUN apt-get update \
     && wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
 
 # Install Jenkins from apt repositories
-RUN apt-get update  && apt-get install -y jenkins
+#RUN apt-get update  && apt-get install -y jenkins
+
+ADD http://mirrors.jenkins-ci.org/war/2.264/jenkins.war /opt/jenkins.war
+RUN chmod 644 /opt/jenkins.war
+ENV JENKINS_HOME /jenkins
+
+ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 
 # Copy data for add-on
-COPY run.sh / 
-RUN chmod a+x /run.sh
+#COPY run.sh / 
+#RUN chmod a+x /run.sh
 
-CMD [ "./run.sh" ]
+#CMD [ "./run.sh" ]

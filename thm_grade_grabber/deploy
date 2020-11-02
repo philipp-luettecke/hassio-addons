@@ -1,0 +1,11 @@
+docker build . -t philippluettecke/hassio-thm-grade-grabber-armv7:$1
+
+if [ -z $? ]; then
+sed -i "s/\"version\": \"\d+.\d+\"/\"version\": \"$1\"/g" config.json
+git add config.json
+git commit -m "Update THM Grade Grabbe Addon to Version $1"
+docker push philippluettecke/hassio-thm-grade-grabber-armv7:$1
+git push
+
+echo "Successfully Updated the THM Grade Grabber Addon to Version $1"
+fi

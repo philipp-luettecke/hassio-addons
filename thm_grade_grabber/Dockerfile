@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
  
 # Setup base system
 RUN apt-get update \
-    && apt-get install -y wget vim gnupg python3 python3-pip chromium chromium-driver\
+    && apt-get install -y wget python3 python3-pip chromium chromium-driver\
     && python3 -m pip install selenium
 
 # Copy data for add-on

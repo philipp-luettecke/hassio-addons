@@ -3,6 +3,7 @@
   "version": "1.3",
   "slug": "pilight",
   "description": "Pilight Service Addon",
+  "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",

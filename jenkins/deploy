@@ -1,0 +1,9 @@
+docker build . -t philippluettecke/hassio-jenkins-armv7:$1
+
+if [ -z $? ]; then
+sed -i "s/\"version\": \"\d+.\d+\"/\"version\": \"$1\"/g" config.json
+git add config.json
+git commit -m "Update Jenkins Addon to Version $1"
+docker push philippluettecke/hassio-jenkins-armv7:$1
+git push
+fi

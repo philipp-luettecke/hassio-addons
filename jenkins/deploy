@@ -6,4 +6,6 @@ git add config.json
 git commit -m "Update Jenkins Addon to Version $1"
 docker push philippluettecke/hassio-jenkins-armv7:$1
 git push
+echo
+echo Successfully Updated Jenkins addon to Version $1
 fi

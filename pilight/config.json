@@ -1,6 +1,6 @@
 {
   "name": "Pilight Server",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "slug": "pilight",
   "description": "Run a Pilight Server on your Home Assistant",
   "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight",

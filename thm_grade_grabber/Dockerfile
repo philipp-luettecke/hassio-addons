@@ -13,9 +13,12 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+ADD https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip /chromedriver.zip
+
 # Copy data for add-on
 COPY run.sh / 
 COPY grab.py /
-RUN chmod a+x /run.sh /grab.py
+RUN chmod a+x /run.sh /grab.py \
+ && unzip /chromedriver.zip
 
 CMD [ "./run.sh" ]

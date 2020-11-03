@@ -18,7 +18,7 @@ webhook = sys.argv[3]
 scan_interval = sys.argv[4]
 
 while True:
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome("/chromedriver", options=chrome_options)
     driver.get(URL)
 
     try:

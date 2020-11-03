@@ -14,8 +14,8 @@
   "options": {
     "gpio_platform": "raspberrypi3",
     "hardware": {
-      "sender": "0",
-      "receiver": "1"
+      "sender": 0,
+      "receiver": 1
     }
   },
   "schema": {

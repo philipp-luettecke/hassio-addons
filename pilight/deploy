@@ -1,6 +1,5 @@
 docker build . -t philippluettecke/hassio-pilight-armv7:$1
 
-if [ -z $? ]; then
 sed -i "s/\"version\": \"[0-9]\+.[0-9]\+\"/\"version\": \"$1\"/g" config.json
 git add config.json
 git commit -m "Update Pilight Addon to Version $1"
@@ -8,4 +7,3 @@ docker push philippluettecke/hassio-pilight-armv7:$1
 git push
 echo
 echo Successfully Updated Pilight  addon to Version $1
-fi

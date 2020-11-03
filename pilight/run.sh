@@ -14,14 +14,14 @@ if bashio::config.has_value "hardware.sender"; then SENDER=$(bashio::config 'har
 if bashio::config.has_value "hardware.receiver"; then RECEIVER=$(bashio::config 'hardware.receiver'); else RECEIVER=-1; fi
 
 
-bashio::log "GPIO Platform found: $GPIO_PLATFORM"
-bashio::log "SENDER Pin is: $SENDER"
-bashio::log "RECEIVER Pin is: $RECEIVER"
+bashio::log.info "GPIO Platform used: $GPIO_PLATFORM"
+if $SENDER!=-1; then bashio::log.info "SENDER Pin is: $SENDER"; else bashio::log.warning "SENDER Pin is disabled"
+if $RECEIVER!=-1; then bashio::log.info "RECEIVER Pin is: RECEIVER"; else bashio::log.warning "RECEIVER Pin is disabled"
 
 # Update pilight config
 sed -i 's/\("gpio-platform"\): \?".*"\(.*\)/\1: "'"$GPIO_PLATFORM"'"\2/' /etc/pilight/config.json
-sed -i 's/\("sender"\): \?".*"\(.*\)/\1: "'"$SENDER"'"\2/' /etc/pilight/config.json
-sed -i 's/\("receiver"\): \?".*"\(.*\)/\1: "'"$RECEIVER"'"\2/' /etc/pilight/config.json
+sed -i 's/\("sender"\): \?".*"\(.*\)/\1: "'$SENDER'"\2/' /etc/pilight/config.json
+sed -i 's/\("receiver"\): \?".*"\(.*\)/\1: "'$RECEIVER'"\2/' /etc/pilight/config.json
 
 bashio::log.green "Starting pilight daemon"
 

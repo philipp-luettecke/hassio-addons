@@ -1,7 +1,7 @@
 ARG BUILD_FROM=homeassistant/armv7-base-debian:buster
 FROM $BUILD_FROM
 
-COPY qemu-arm-static /usr/bin
+#COPY qemu-arm-static /usr/bin
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]

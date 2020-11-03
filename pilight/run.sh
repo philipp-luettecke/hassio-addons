@@ -8,8 +8,8 @@ if bashio::config.has_value "hardware.receiver"; then RECEIVER=$(bashio::config 
 
 
 bashio::log.info "GPIO Platform used: $GPIO_PLATFORM"
-if [ $SENDER -lt 0 ]; then bashio::log.info "SENDER Pin is: $SENDER"; else bashio::log.warning "SENDER Pin is disabled"; fi
-if [ $RECEIVER -lt 0 ]; then bashio::log.info "RECEIVER Pin is: $RECEIVER"; else bashio::log.warning "RECEIVER Pin is disabled"; fi
+if [ $SENDER -ge 0 ]; then bashio::log.info "SENDER Pin is: $SENDER"; else bashio::log.warning "SENDER Pin is disabled"; fi
+if [ $RECEIVER -ge 0 ]; then bashio::log.info "RECEIVER Pin is: $RECEIVER"; else bashio::log.warning "RECEIVER Pin is disabled"; fi
 
 # Update pilight config
 sed -i 's/\("gpio-platform"\): \?".*"\(.*\)/\1: "'"$GPIO_PLATFORM"'"\2/' /etc/pilight/config.json

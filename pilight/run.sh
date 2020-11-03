@@ -10,8 +10,8 @@ bashio::log.error "No Platform specified - using none instead"
 GPIO_PLATFORM="none"
 fi
 
-if bashio::config.has_value "sender"; then SENDER=$(bashio::config 'sender'); else SENDER=-1; fi
-if bashio::config.has_value "receiver"; then RECEIVER=$(bashio::config 'receiver'); else RECEIVER=-1; fi
+if bashio::config.has_value "hardware.sender"; then SENDER=$(bashio::config 'hardware.sender'); else SENDER=-1; fi
+if bashio::config.has_value "hardware.receiver"; then RECEIVER=$(bashio::config 'hardware.receiver'); else RECEIVER=-1; fi
 
 
 bashio::log "GPIO Platform found: $GPIO_PLATFORM"

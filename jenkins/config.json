@@ -8,7 +8,7 @@
   "startup": "application",
   "boot": "auto",
   "webui": "http://[HOST]:[PORT:8080]",
-  "map": ["media:rw", "share:rw"],
+  "map": ["share:rw"],
   "options": {},
   "schema": {},
   "ports": {

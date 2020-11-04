@@ -8,6 +8,7 @@
   "startup": "services",
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
+  "webui": "http://[HOST]:[PORT:5001]",
   "gpio": "true",
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],

@@ -1,6 +1,6 @@
 {
   "name": "THM Grade Grabber",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "slug": "thm_grade_grabber",
   "description": "This Addon grabs the THM Grade Portal for updated grades and invokes a webhook accordingly",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],

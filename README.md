@@ -88,7 +88,7 @@ A Addon for grabbing THM Grades
 
 [thm-grade-grabber-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/thm_grade_grabber
 [addon-doc-thm-grade-grabber]: https://github.com/philipp-luettecke/hassio-addons/tree/main/thm_grade_grabber/README.md
-[thm-grade-grabber-version-shield]: https://img.shields.io/badge/version-v1.6.4-blue.svg
+[thm-grade-grabber-version-shield]: https://img.shields.io/badge/version-v0.3.3-blue.svg
 [thm-grade-grabber-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-thm-grade-grabber-armv7.svg
 [thm-grade-grabber-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [thm-grade-grabber-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg

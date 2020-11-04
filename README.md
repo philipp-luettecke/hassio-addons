@@ -4,22 +4,22 @@
 
 Home Assistant allows anyone to create add-on repositories to share their
 add-ons for Home Assistant easily. This repository is one of those repositories,
-providing extra Home Assistant add-ons for your installation.
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
 
 The primary goal of this project is to provide you (as a Home Assistant user)
 with additional, high quality, add-ons that allow you to take your automated
-home to the next level.
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
 
 ## Installation
 
 If the repository is missing on your setup, adding this add-ons
-repository to your Home Assistant instance is pretty easy. In the
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
 Home Assistant add-on store, a possibility to add a repository is provided.
 
 Use the following URL to add this repository:
 
 ```txt
-https://github.com/philipp-luettecke/hassio-addons
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
 ```
 
 ## Add-ons provided by this repository

@@ -3,7 +3,7 @@ docker build . -t philippluettecke/hassio-thm-grade-grabber-armv7:$1
 sed -i "s/\"version\": \"[0-9]\+\(.[0-9]\+\)\+\"/\"version\": \"$1\"/g" config.json
 
 # Update Version shield in global README.md
-sed -i "s@^[thm-grade-grabber-version-shield].*@[thm-grade-grabber-version-shield]: https://img.shields.io/badge/version-v$1-blue.svg@" ../README.md
+sed -i "s@^\[thm-grade-grabber-version-shield\].*@[thm-grade-grabber-version-shield]: https://img.shields.io/badge/version-v$1-blue.svg@" ../README.md
 
 # Push changes to Git and Docker Hub
 git add config.json ../README.md

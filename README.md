@@ -4,22 +4,22 @@
 
 Home Assistant allows anyone to create add-on repositories to share their
 add-ons for Home Assistant easily. This repository is one of those repositories,
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
+providing extra Home Assistant add-ons for your installation.
 
 The primary goal of this project is to provide you (as a Home Assistant user)
 with additional, high quality, add-ons that allow you to take your automated
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
+home to the next level.
 
 ## Installation
 
 If the repository is missing on your setup, adding this add-ons
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
+repository to your Home Assistant instance is pretty easy. In the
 Home Assistant add-on store, a possibility to add a repository is provided.
 
 Use the following URL to add this repository:
 
 ```txt
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
+https://github.com/philipp-luettecke/hassio-addons
 ```
 
 ## Add-ons provided by this repository
@@ -78,7 +78,7 @@ A Addon for grabbing THM Grades
 
 [pilight-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight
 [addon-doc-pilight]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight/README.md
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.4-blue.svg
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.6.6-blue.svg
 [pilight-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-pilight-armv7.svg
 [pilight-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [pilight-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg

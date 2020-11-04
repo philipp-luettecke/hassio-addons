@@ -1,7 +1,12 @@
 docker build . -t philippluettecke/hassio-pilight-armv7:$1
 
+# Update Version in Config.json
 sed -i "s/\"version\": \"[0-9]\+\(.[0-9]\+\)\+\"/\"version\": \"$1\"/g" config.json
-sed -i "s/^[pilight-version-shield] .*$/[pilight-version-shield]: https://img.shields.io/badge/version-v$1-blue.svg/" ../README.md
+
+# Update Version shield in global README.md
+sed -i "s@^[pilight-version-shield].*@[pilight-version-shield]: https://img.shields.io/badge/version-v$1-blue.svg@" ../README.md
+
+# Push changes to Git and Docker Hub
 git add config.json ../README.md
 git commit -m "Update Pilight Addon to Version $1"
 docker push philippluettecke/hassio-pilight-armv7:$1

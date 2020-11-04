@@ -1,4 +1,4 @@
-# Home Assistant Community Add-ons
+# Philipps Home Assistant Add-ons
 
 ## About
 

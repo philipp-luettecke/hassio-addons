@@ -1,5 +1,10 @@
 #!/usr/bin/with-contenv bashio
 
-echo Starting Jenkins daemon
+pwd
+ls -lisa /mnt/
+ls -lisa /mnt/data/
+ls -lisa /mnt/data/supervisor/
+ls -lisa /mnt/data/supervisor/share
 
-java -jar /opt/jenkins.war
+bashio::log.info "Starting Jenkins daemon"
+#java -jar /opt/jenkins.war

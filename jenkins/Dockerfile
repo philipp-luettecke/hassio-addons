@@ -15,7 +15,7 @@ RUN apt-get update \
 # Install Jenkins from apt repositories
 #RUN apt-get update  && apt-get install -y jenkins
 
-ADD http://mirrors.jenkins-ci.org/war/2.264/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/latest/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 

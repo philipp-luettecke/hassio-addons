@@ -4,7 +4,7 @@
   "slug": "jenkins",
   "description": "Jenkins Service Addon",
   "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/jenkins",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": ["armv7"],
   "startup": "application",
   "boot": "auto",
   "webui": "http://[HOST]:[PORT:8080]",

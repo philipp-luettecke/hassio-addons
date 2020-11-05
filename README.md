@@ -68,7 +68,7 @@ A Addon for grabbing THM Grades
 
 [jenkins-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/jenkins
 [addon-doc-jenkins]: https://github.com/philipp-luettecke/hassio-addons/tree/main/jenkins/README.md
-[jenkins-version-shield]: https://img.shields.io/badge/version-v0.5.2-blue.svg
+[jenkins-version-shield]: https://img.shields.io/badge/version-v0.5.3-blue.svg
 [jenkins-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-jenkins-armv7.svg
 [jenkins-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [jenkins-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg

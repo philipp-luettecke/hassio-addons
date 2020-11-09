@@ -22,7 +22,9 @@ Follow these steps to get the add-on installed on your system:
 
 ## Add-on Configuration
 
-The Pilight server add-on can now be tweaked to your likings. 
+The Pilight server add-on can now be tweaked to your likings.
+
+Setting the `debug` switch to true enables the debug output of the pilight daemon.
 
 Example configuration:
 
@@ -31,6 +33,7 @@ gpio_platform: raspberrypi3
 hardware:
   sender: 0
   receiver: 1
+debug: false
 ```
 
 

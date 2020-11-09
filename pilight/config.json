@@ -17,14 +17,16 @@
     "hardware": {
       "sender": 0,
       "receiver": 1
-    }
+    },
+    "debug": false
   },
   "schema": {
     "gpio_platform": "str",
     "hardware": {
       "sender": "int",
       "receiver": "int"
-    }
+    },
+    "debug": "list(true|false)?"
   },
   "ports": {
     "5000/tcp": 5010,

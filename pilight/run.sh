@@ -5,8 +5,9 @@ bashio::log.debug "Starting Setup of Pilight Server by reading values from Confi
 if bashio::config.has_value "gpio_platform"; then GPIO_PLATFORM=$(bashio::config 'gpio_platform'); else GPIO_PLATFORM="none";fi
 if bashio::config.has_value "hardware.sender"; then SENDER=$(bashio::config 'hardware.sender'); else SENDER=-1; fi
 if bashio::config.has_value "hardware.receiver"; then RECEIVER=$(bashio::config 'hardware.receiver'); else RECEIVER=-1; fi
+if bashio::config.has_value "debug"; then if bashio::config.true "debug"; then DEBUG="-D"; else DEBUG=""; fi; fi
 
-
+# Output detected variables
 bashio::log.info "GPIO Platform used: $GPIO_PLATFORM"
 if [ $SENDER -ge 0 ]; then bashio::log.info "SENDER Pin is: $SENDER"; else bashio::log.warning "SENDER Pin is disabled"; fi
 if [ $RECEIVER -ge 0 ]; then bashio::log.info "RECEIVER Pin is: $RECEIVER"; else bashio::log.warning "RECEIVER Pin is disabled"; fi
@@ -16,6 +17,10 @@ sed -i 's/\("gpio-platform"\): \?".*"\(.*\)/\1: "'"$GPIO_PLATFORM"'"\2/' /etc/pi
 sed -i 's/\("sender"\): \?".*"\(.*\)/\1: "'$SENDER'"\2/' /etc/pilight/config.json
 sed -i 's/\("receiver"\): \?".*"\(.*\)/\1: "'$RECEIVER'"\2/' /etc/pilight/config.json
 
-bashio::log.info "Starting pilight daemon"
+if bashio::config.true "debug"; then
+  bashio::log.warning "Starting Pilight daemon in debug Mode"
+else
+  bashio::log.info "Starting Pilight daemon"
+fi
 
-/usr/local/sbin/pilight-daemon -F
+/usr/local/sbin/pilight-daemon -F "$DEBUG"

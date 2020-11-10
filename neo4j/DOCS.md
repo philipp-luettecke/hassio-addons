@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Jenkins
+# Home Assistant Add-on: Neo4J
 
 ## Installation
 

@@ -1,0 +1,23 @@
+{
+  "name": "Neo4J Desktop",
+  "version": "0.0.1",
+  "slug": "neo4j",
+  "description": "Neo4J Addon",
+  "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/neo4j",
+  "arch": ["armv7"],
+  "startup": "application",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:7474]",
+  "map": ["share:rw"],
+  "options": {},
+  "schema": {},
+  "ports": {
+    "7474/tcp": 7474,
+    "7687/tcp": 7687
+  },
+  "ports_description": {
+    "7474/tcp": "HTTP Port of Neo4J",
+    "7687/tcp": "Bolt Port of Neo4J"
+  },
+  "image": "philippluettecke/hassio-neo4j-{arch}"
+}

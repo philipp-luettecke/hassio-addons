@@ -66,6 +66,20 @@ A Addon for grabbing THM Grades
 
 [:books: thm_grade_grabber Server add-on documentation][addon-doc-thm-grade-grabber]
 
+### &#10003; [Neo4J][neo4j-addon]
+
+![Latest Version][neo4j-version-shield]
+![Supports armhf Architecture][neo4j-armhf-shield]
+![Supports armv7 Architecture][neo4j-armv7-shield]
+![Supports aarch64 Architecture][neo4j-aarch64-shield]
+![Supports amd64 Architecture][neo4j-amd64-shield]
+![Supports i386 Architecture][neo4j-i386-shield]
+![Docker Pulls][neo4j-pulls-shield]
+
+A Addon for grabbing THM Grades
+
+[:books: neo4j Server add-on documentation][addon-doc-neo4j]
+
 [jenkins-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/jenkins
 [addon-doc-jenkins]: https://github.com/philipp-luettecke/hassio-addons/tree/main/jenkins/README.md
 [jenkins-version-shield]: https://img.shields.io/badge/version-v0.5.4-blue.svg
@@ -95,3 +109,13 @@ A Addon for grabbing THM Grades
 [thm-grade-grabber-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [thm-grade-grabber-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [thm-grade-grabber-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+
+[neo4j-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/neo4j
+[addon-doc-neo4j]: https://github.com/philipp-luettecke/hassio-addons/tree/main/neo4j/README.md
+[neo4j-version-shield]: https://img.shields.io/badge/version-v0.3.4-blue.svg
+[neo4j-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-neo4j-armv7.svg
+[neo4j-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
+[neo4j-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg
+[neo4j-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[neo4j-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[neo4j-i386-shield]: https://img.shields.io/badge/i386-no-red.svg

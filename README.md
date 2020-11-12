@@ -112,7 +112,7 @@ A Addon for grabbing THM Grades
 
 [neo4j-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/neo4j
 [addon-doc-neo4j]: https://github.com/philipp-luettecke/hassio-addons/tree/main/neo4j/README.md
-[neo4j-version-shield]: https://img.shields.io/badge/version-v0.0.6-blue.svg
+[neo4j-version-shield]: https://img.shields.io/badge/version-v0.0.7-blue.svg
 [neo4j-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-neo4j-armv7.svg
 [neo4j-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [neo4j-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg

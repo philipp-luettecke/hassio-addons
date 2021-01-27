@@ -1,0 +1,23 @@
+{
+  "name": "Open Media Vault Server",
+  "version": "0.0.1",
+  "slug": "omv",
+  "description": "Run a Open Media Vault Server on your Home Assistant",
+  "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/openmediavault",
+  "arch": ["armhf", "armv7"],
+  "startup": "services",
+  "boot": "auto",
+  "privileged": ["SYS_RAWIO"],
+  "map": ["share:rw"],
+  "webui": "http://[HOST]:[PORT:80]",
+  "gpio": "true",
+  "apparmor": "false",
+  "devices": ["/dev/mem:/dev/mem:rwm"],
+  "options": {},
+  "schema": {},
+  "ports": {
+    "80/tcp": 88
+  },
+  "ports_description": {},
+  "image":"philippluettecke/hassio-omv-{arch}"
+}

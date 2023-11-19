@@ -7,7 +7,7 @@
   "arch": ["armhf", "armv7"],
   "startup": "services",
   "boot": "auto",
-  "privileged": ["SYS_RAWIO"],
+  "privileged": ["SYS_RAWIO", "SYS_NICE"],
   "webui": "http://[HOST]:[PORT:5001]",
   "gpio": "true",
   "apparmor": "false",

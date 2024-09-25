@@ -1,0 +1,36 @@
+ARG BUILD_FROM=homeassistant/armv7-base-debian:buster
+
+FROM $BUILD_FROM
+
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+WORKDIR /opt/pilight
+
+RUN apt-get update \
+&& apt-get install -y build-essential cmake git dialog libpcap0.8-dev libmbedtls-dev liblua5.2-dev libluajit-5.1-dev
+
+RUN git clone -b master https://github.com/wiringX/wiringX \
+&& mkdir wiringX/build \
+&& cd wiringX/build \
+&& cmake .. \
+&& make \
+&& cpack -G DEB \
+&& dpkg -i libwiringx*.deb
+
+RUN git clone --depth 5 -b master https://www.github.com/pilight/pilight.git \
+&& cd pilight \
+&& chmod +x setup.sh \
+&& ./setup.sh install \
+&& ldconfig
+
+RUN rm -rf /opt/pilight/*
+
+# Copy the pilight Config into the Container
+COPY pilight-config.json /etc/pilight/config.json
+
+# Copy data for add-on
+COPY run.sh / 
+RUN chmod a+x /run.sh
+
+CMD [ "./run.sh" ]

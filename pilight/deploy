@@ -40,7 +40,7 @@ sed -i "s@^\[pilight-version-shield\]: .*@[pilight-version-shield]: https://img.
 # Push changes to Git and Docker Hub
 git add config.json ../README.md
 git commit -m "Update Pilight Addon to Version $VERSION"
-docker tag philippluettecke/hassio-pilight-armv7:"$VERSION" philippluettecke/hassio-pililght-armv7:latest
+docker tag philippluettecke/hassio-pilight-armv7:"$VERSION" philippluettecke/hassio-pilight-armv7:latest
 docker push philippluettecke/hassio-pilight-armv7:"$VERSION"
 docker push philippluettecke/hassio-pilight-armv7:latest
 git push

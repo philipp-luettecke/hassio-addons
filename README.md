@@ -92,7 +92,7 @@ A Addon for grabbing THM Grades
 
 [pilight-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight
 [addon-doc-pilight]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight/README.md
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.7.2-blue.svg
+[pilight-version-shield]: https://img.shields.io/badge/version-v1.8.0-blue.svg
 [pilight-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-pilight-armv7.svg
 [pilight-aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [pilight-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg
